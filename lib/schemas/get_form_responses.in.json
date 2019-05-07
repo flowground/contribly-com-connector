@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "user": {
+            "required": false,
+            "type": "string"
+        },
+        "form": {
+            "required": false,
+            "type": "string"
+        },
+        "contribution": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

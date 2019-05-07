@@ -1,0 +1,20 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "urlWords": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "urlWords"
+            ],
+            "type": "object"
+        }
+    }
+}

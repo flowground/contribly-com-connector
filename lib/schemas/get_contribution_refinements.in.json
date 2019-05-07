@@ -1,0 +1,68 @@
+{
+    "type": "object",
+    "properties": {
+        "assignment": {
+            "required": false,
+            "type": "string"
+        },
+        "country": {
+            "required": false,
+            "type": "string"
+        },
+        "createdBefore": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "createdAfter": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "geohash": {
+            "required": false,
+            "type": "string"
+        },
+        "hasLocation": {
+            "required": false,
+            "type": "boolean"
+        },
+        "latLong": {
+            "required": false,
+            "type": "string"
+        },
+        "radius": {
+            "required": false,
+            "type": "number",
+            "format": "double"
+        },
+        "mediaType": {
+            "required": false,
+            "type": "string"
+        },
+        "ownedBy": {
+            "required": false,
+            "type": "string"
+        },
+        "q": {
+            "required": false,
+            "type": "string"
+        },
+        "urlWords": {
+            "required": false,
+            "type": "string"
+        },
+        "user": {
+            "required": false,
+            "type": "string"
+        },
+        "refinements": {
+            "required": false,
+            "type": "string"
+        },
+        "refinementSize": {
+            "required": false,
+            "type": "number"
+        }
+    }
+}

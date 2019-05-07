@@ -1,0 +1,52 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "action": {
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "label": {
+                            "type": "string"
+                        },
+                        "resultingState": {
+                            "properties": {
+                                "id": {
+                                    "type": "string"
+                                },
+                                "label": {
+                                    "type": "string"
+                                },
+                                "public": {
+                                    "type": "boolean"
+                                }
+                            },
+                            "required": [
+                                "id",
+                                "label",
+                                "public"
+                            ],
+                            "type": "object"
+                        }
+                    },
+                    "required": [
+                        "id",
+                        "label",
+                        "resultingState"
+                    ],
+                    "type": "object"
+                },
+                "notes": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    }
+}

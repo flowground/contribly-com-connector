@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "ownedBy": {
+            "required": false,
+            "type": "string"
+        },
+        "tagSet": {
+            "required": false,
+            "type": "string"
+        },
+        "urlWords": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

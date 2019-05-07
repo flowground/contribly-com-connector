@@ -1,0 +1,180 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "properties": {
+                "allowsAnonymousContributions": {
+                    "type": "boolean"
+                },
+                "cover": {
+                    "properties": {
+                        "artifacts": {
+                            "items": {
+                                "properties": {
+                                    "contentLength": {
+                                        "type": "number"
+                                    },
+                                    "contentType": {
+                                        "type": "string"
+                                    },
+                                    "height": {
+                                        "type": "number"
+                                    },
+                                    "label": {
+                                        "type": "string"
+                                    },
+                                    "url": {
+                                        "type": "string"
+                                    },
+                                    "width": {
+                                        "type": "number"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "type": "array"
+                        },
+                        "id": {
+                            "type": "string"
+                        },
+                        "media": {
+                            "properties": {
+                                "duration": {
+                                    "type": "number"
+                                },
+                                "id": {
+                                    "type": "string"
+                                },
+                                "place": {
+                                    "properties": {
+                                        "country": {
+                                            "type": "string"
+                                        },
+                                        "geohash": {
+                                            "type": "string"
+                                        },
+                                        "google": {
+                                            "type": "string"
+                                        },
+                                        "latLong": {
+                                            "properties": {
+                                                "latitude": {
+                                                    "format": "double",
+                                                    "type": "number"
+                                                },
+                                                "longitude": {
+                                                    "format": "double",
+                                                    "type": "number"
+                                                }
+                                            },
+                                            "type": "object"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "osm": {
+                                            "properties": {
+                                                "osmId": {
+                                                    "type": "number"
+                                                },
+                                                "osmType": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "type": "object"
+                                        }
+                                    },
+                                    "type": "object"
+                                },
+                                "type": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    },
+                    "type": "object"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "embargo": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "ends": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "featured": {
+                    "type": "boolean"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "mediaRequired": {
+                    "type": "boolean"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "receiptMessage": {
+                    "description": "An optional assignment specific message to be displayed on successful contribution submission. For example, this might be used to inform contributors of assignment specific moderation time frames.",
+                    "type": "string"
+                },
+                "starts": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "tags": {
+                    "items": {
+                        "properties": {
+                            "colour": {
+                                "description": "Optional HTML hexcode colour",
+                                "example": "#0061a6",
+                                "type": "string"
+                            },
+                            "id": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "tagSet": {
+                                "properties": {
+                                    "id": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [
+                                    "id",
+                                    "name"
+                                ],
+                                "type": "object"
+                            },
+                            "urlWords": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "id",
+                            "name"
+                        ],
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "urlWords": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name"
+            ],
+            "type": "object"
+        }
+    }
+}

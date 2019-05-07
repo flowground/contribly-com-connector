@@ -1,0 +1,41 @@
+{
+    "type": "object",
+    "properties": {
+        "ownedBy": {
+            "required": false,
+            "type": "string"
+        },
+        "page": {
+            "required": false,
+            "type": "integer"
+        },
+        "pageSize": {
+            "required": false,
+            "type": "integer"
+        },
+        "q": {
+            "required": false,
+            "type": "string"
+        },
+        "urlWords": {
+            "required": false,
+            "type": "string"
+        },
+        "open": {
+            "required": false,
+            "type": "boolean"
+        },
+        "alwaysOpen": {
+            "required": false,
+            "type": "boolean"
+        },
+        "tag": {
+            "required": false,
+            "type": "string"
+        },
+        "name": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

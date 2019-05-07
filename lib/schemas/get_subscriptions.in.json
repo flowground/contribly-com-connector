@@ -1,0 +1,35 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "properties": {
+                "assignment": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "includeBody": {
+                    "type": "boolean"
+                },
+                "includeThumbenail": {
+                    "type": "boolean"
+                },
+                "slackChannel": {
+                    "type": "string"
+                },
+                "types": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                }
+            },
+            "required": [
+                "types",
+                "includeBody"
+            ],
+            "type": "object"
+        }
+    }
+}
